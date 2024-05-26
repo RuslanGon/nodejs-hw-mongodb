@@ -1,6 +1,0 @@
-PORT= 3000
-MONGODB_USER=Ruslan
-MONGODB_PASSWORD=Jprnc1YC87RVFfHA
-MONGODB_URL=cluster0.9yeu1fb.mongodb.net
-MONGODB_DB=contacts
-
