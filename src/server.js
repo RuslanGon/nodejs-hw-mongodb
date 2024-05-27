@@ -43,7 +43,7 @@ export const setupServer = () => {
         });
         } catch(error) {
               res.status(404).json({
-                message: 'Error with fetching contact data',
+                message: 'There is not contact',
             });
         }
     });
