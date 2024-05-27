@@ -42,8 +42,8 @@ export const setupServer = () => {
             data: contact,
         });
         } catch(error) {
-             return res.status(404).json({
-                message: `There is no contact with id ${contactId}`,
+              res.status(404).json({
+                message: 'Error with fetching contact data',
             });
         }
     });
