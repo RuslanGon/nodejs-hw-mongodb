@@ -12,6 +12,7 @@ export const setupServer = () => {
     app.use(express.json());
     app.use(cors());
 
+
     app.use(
         pino({
             transport: {
@@ -19,6 +20,8 @@ export const setupServer = () => {
             },
         }),
     );
+
+
 
 
     app.get('/contacts', async (req, res) => {
