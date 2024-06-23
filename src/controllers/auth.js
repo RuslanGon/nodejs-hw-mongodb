@@ -6,10 +6,10 @@ import { loginUser, logoutUser, refreshSession, registerUser, requestResetToken,
 export const registerUserController = async (req, res) => {
     const user = await registerUser(req.body);
 
-    res.json({
-        status: 200,
-        message: 'Successfully registered a user!',
-        data: user,
+    res.status(201).json({
+      status: 201,
+      message: 'Successfully registered a user!',
+      data: user,
     });
 };
 
